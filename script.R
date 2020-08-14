@@ -69,6 +69,6 @@ plot =  ggplot2::ggplot(
 
 plot = plotly::ggplotly(plot)
 
-htmlwidgets::saveWidget(plot, file = "./docs/excess_mortality.html", selfcontained = T)
+htmlwidgets::saveWidget(plot, file = "./index.html", selfcontained = T)
 
 
