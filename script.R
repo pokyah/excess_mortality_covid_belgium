@@ -7,6 +7,7 @@ library(stringr)
 library(ggplot2)
 library(plotly)
 library(ggpubr)
+library(htmlwidgets)
 
 
 ##---- data source
@@ -67,3 +68,7 @@ plot =  ggplot2::ggplot(
   theme_minimal()
 
 plot = plotly::ggplotly(plot)
+
+htmlwidgets::saveWidget(plot, file = "./docs/excess_mortality.html", selfcontained = T)
+
+
